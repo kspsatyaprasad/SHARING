@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//hibernate/hibernate mapping dtd2.0//en"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="mypojoregister" table="register">
+<id name="employeeid" column="employeeid" type="string">
+<generator class ="assigned"></generator></id>
+<property name="employeename" type="string" column="employeename" />
+<property name="employeeemail" type="string" column="employeeemail" />
+<property name="employeeaddress" type="string" column="employeeaddress" />
+
+</class>
+<class name="mypojologin" table="login">
+<id name="uname" column="uname" type="string">
+<generator class ="assigned"></generator></id>
+<property name="pword" type="string" column="pword" />
+</class>
+</hibernate-mapping>
